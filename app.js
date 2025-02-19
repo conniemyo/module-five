@@ -3,7 +3,7 @@ const counterValueElement = document.getElementById("counterValue");
 
 function updateCounterDisplay() {
     counterValueElement.textContent = counter;
-    // change based on variable value
+    // change css based on variable value
     if (counter < 0) {
         counterValueElement.style.backgroundColor = "red";
     } else if (counter === 0) {
