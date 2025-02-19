@@ -16,6 +16,7 @@ function resetBoxColor() {
 }
 
 function changeTheme() {
+  console.log('Current theme:', themeMode);
   if (themeMode === "light") {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
@@ -33,5 +34,6 @@ document.getElementById("resetBtn").addEventListener("click", resetBoxColor);
 
 document.getElementById("themeBtn").addEventListener("click", function() {
   themeMode = (themeMode === "light") ? "dark" : "light";
+  console.log('Theme changed to:', themeMode);
   changeTheme();
 });
