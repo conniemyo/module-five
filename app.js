@@ -4,7 +4,6 @@ const counterValueElement = document.getElementById("counterValue");
 function updateCounterDisplay() {
     counterValueElement.textContent = counter;
 
-    // Change background color based on counter value
     if (counter < 0) {
         counterValueElement.style.backgroundColor = "red";
     } else if (counter === 0) {

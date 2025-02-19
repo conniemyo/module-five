@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 5.4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #counterValue {
+            font-size: 3em;
+            margin: 20px;
+        }
+
+        button {
+            font-size: 2em;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="counterValue">0</div>
-    <button onclick="decrementCounter()">-</button>
-    <button onclick="incrementCounter()">+</button>
-    
+    <div>
+        <div id="counterValue">0</div>
+        <button onclick="decrementCounter()">-</button>
+        <button onclick="incrementCounter()">+</button>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
